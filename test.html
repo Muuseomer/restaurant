@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAILWIND PROJECT</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class=" text-gray-500 font-roboto">
+    <div class="contentwrapper grid md:grid-cols-3"><!--content wrapper-->
+      <div class=" md:col-span-1 md:flex md:justify-end">
+        <nav class=" text-end">
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold p-4">
+                    <a href="/" class=" text-green-600 sm:text-red-600 lg:text-blue-500 hover:text-gray-700">food alibaba</a>
+                </h1>
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </div>
+            </div>
+            <ul class=" text-sm mt-6 hidden md:block" id="menu">
+                <li class="py-1 text-gray-700 font-bold">
+                    <a href="#" class="px-4 flex justify-end border-r-2 border-red-800">
+                        <span>Home</span>
+                        <svg class=" w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                          </svg>
+                          
+                    </a>
+                </li>
+                <li class="py-1 text-gray-700 font-bold">
+                    <a href="#" class="px-4 flex justify-end border-r-2 border-white">
+                        <span>About</span>
+                        <svg class=" w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3" />
+                          </svg>
+                          
+                    </a>
+                </li>
+                <li class="py-1 text-gray-700 font-bold">
+                    <a href="#" class="px-4 flex justify-end border-r-2 border-white">
+                        <span>Contact</span>
+                        <svg class=" w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                          </svg>
+                          
+                    </a>
+                </li>
+            </ul>
+        </nav>
+      </div><!--end nav-->
+      <main class=" px-16 py-6 bg-gray-50 md:col-span-2 h-[100vh]">
+        <div class="flex justify-center md:justify-end">
+            <a href="#" class="btn text-red-300 border-red-300 md:border-[3px] hover:bg-red-300 hover:text-white transition ease-out duration-500">log in</a>
+            <a href="#" class="btn text-red-300 ml-2 border-red-300 md:border-[3px] hover:bg-red-300 hover:text-white transition ease-out duration-500">sign up</a>
+        </div>
+      <header>
+        <h2 class=" text-gray-600 text-6xl font-semibold py-3">Recipes</h2>
+        <h3 class=" text-xl font-normal">For alibaba</h3>
+      </header>
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+            <!--cards go here-->
+            
+            <div class="mt-8 grid sm:grid-cols-3 gap-10">
+            
+                <!--card 1-->
+                 
+                     <div class=" bg-white rounded-lg overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer hover:translate-y-[-10px] transition-all">   
+                         <img  src="/image/pizzA.jpg" alt="pizzA" class="w-full sm:h-32  object-cover">
+                     <div class=" pl-2 py-3">
+                         <span class=" font-bold capitalize">hello pizzA</span>
+                         <span class="block text-gray-500 text-sm">Recipe by Alibaba</span>
+                     </div>
+                     <div class=" bg-yellow-100 text-slate-300- text-xs font-bold uppercase rounded-full p-2 absolute top-0 ml-2 mt-2">
+                        <svg class=" w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        <span>30 mins</span>
+                     </div>
+                </div>
+
+                <div class=" bg-white rounded-lg overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer hover:translate-y-[-10px] transition-all">   
+                    <img  src="/image/bariis.jpg" alt="bariis" class="w-full sm:h-32  object-cover">
+                <div class=" pl-2 py-3">
+                    <span class=" font-bold capitalize">bariis macala digaag</span>
+                    <span class="block text-gray-500 text-sm">Recipe by Alibaba</span>
+                </div>
+                <div class=" bg-yellow-100 text-slate-500 text-xs font-bold uppercase rounded-full p-2 absolute top-0 ml-2 mt-2">
+                    <svg class=" w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                   <span>5 mins</span>
+                </div>
+           </div>
+
+           <div class=" bg-white rounded-lg overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer hover:translate-y-[-10px] transition-all">   
+            <img  src="/image/beed.jpg" alt="beed" class="w-full h-[200px] sm:h-32  object-cover">
+        <div class=" pl-2 py-3">
+            <span class=" font-bold capitalize">sabaaya maca beed</span>
+            <span class="block text-gray-500 text-sm">Recipe by Alibaba</span>
+        </div>
+        <div class=" bg-yellow-100 text-slate-500 text-xs font-bold uppercase rounded-full p-2 absolute top-0 ml-2 mt-2">
+            <svg class=" w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            <span>15 mins</span>
+        </div>
+   </div>
+             
+             </div>
+ 
+             
+
+           <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+           <div class="flex justify-center py-6">
+            <div class="btn bg-yellow-700 text-white px-3 rounded-xl hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition-all">Load more</div>
+           </div>
+        
+      
+        </main>
+
+    </div>
+    <script src="/src/index.js"></script>
+</body>
+</html>
